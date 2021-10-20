@@ -4,4 +4,6 @@
 
 export * from './lib/lib-shared.service';
 export * from './lib/lib-shared.component';
+export * from './lib/lib-shared.model';
 export * from './lib/lib-shared.module';
+

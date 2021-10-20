@@ -13,7 +13,6 @@ export class NavigationComponent {
     .observe(Breakpoints.Handset)
     .pipe(
       map((result) => {
-        console.log(result);
         return result.matches;
       }),
       shareReplay()

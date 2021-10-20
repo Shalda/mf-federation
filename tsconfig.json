@@ -10,22 +10,19 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "lib-shared": [
-        "dist/lib-shared/lib-shared",
-        "dist/lib-shared"
-      ]
+      "lib-shared": ["dist/lib-shared/lib-shared", "dist/lib-shared"]
     },
-    "declaration": false,
+    "typeRoots": ["./node_modules/@types",
+      "./projects/shell/src/declarations.d.ts"
+    ],
+    "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

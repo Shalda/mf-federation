@@ -1,3 +1,10 @@
-.wrapper{
+.main_content{
+  min-height: 100vh;
+  position: relative;
   display: flex;
+  flex-direction: column;
+background-color: #f5f5f5;
+}
+footer{
+  margin-top: auto;
 }
