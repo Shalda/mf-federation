@@ -1,0 +1,21 @@
+mat-toolbar {
+  justify-content: end;
+}
+.header {
+  width: 100%;
+  background-color: #23353f;
+  color: #b7b7b7;
+  .logo {
+    height: 50%;
+    margin-left: 1.1rem;
+    cursor: pointer;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
