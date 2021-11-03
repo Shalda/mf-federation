@@ -60,6 +60,11 @@ module.exports = {
           strictVersion: true,
           requiredVersion: "auto",
         },
+        "@angular/animations": {
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: "auto",
+        },
 
         ...sharedMappings.getDescriptors(),
       }),

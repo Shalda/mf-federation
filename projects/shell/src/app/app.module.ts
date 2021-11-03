@@ -16,6 +16,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
+import {SharedModule} from "../../../mf5/src/app/shared/shared.module";
+import {LibSharedModule} from "../../../lib-shared/src/lib/lib-shared.module";
 
 
 @NgModule({
@@ -24,7 +26,6 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
@@ -34,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    LibSharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -25,30 +25,20 @@ const routes: Routes = [
       }).then((m) => m.FooterModule),
   },
   {
-    path: 'home',
+    path: 'table',
     loadChildren: () =>
       loadRemoteModule({
-        remoteName: 'mf4',
-        remoteEntry: 'http://localhost:4204/remoteEntry.js',
-        exposedModule: 'AppModule',
-      }).then((m) => m.AppModule),
+        remoteName: 'mf1',
+        remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        exposedModule: 'TableModule',
+      }).then((m) => m.TableModule),
   },
-
   {
     path: 'login',
     loadChildren: () =>
       loadRemoteModule({
         remoteName: 'mf2',
         remoteEntry: 'http://localhost:4202/remoteEntry.js',
-        exposedModule: 'AppModule',
-      }).then((m) => m.AppModule),
-  },
-  {
-    path: 'table',
-    loadChildren: () =>
-      loadRemoteModule({
-        remoteName: 'mf1',
-        remoteEntry: 'http://localhost:4201/remoteEntry.js',
         exposedModule: 'AppModule',
       }).then((m) => m.AppModule),
   },
@@ -61,6 +51,16 @@ const routes: Routes = [
         exposedModule: 'AppModule',
       }).then((m) => m.AppModule),
   },
+  {
+    path: 'home',
+    loadChildren: () =>
+      loadRemoteModule({
+        remoteName: 'mf4',
+        remoteEntry: 'http://localhost:4204/remoteEntry.js',
+        exposedModule: 'AppModule',
+      }).then((m) => m.AppModule),
+  },
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

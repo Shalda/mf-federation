@@ -1,28 +1,22 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TableComponent } from './table/table.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import {CommonModule} from "@angular/common";
+
+import {LibSharedModule} from "../../../lib-shared/src/lib/lib-shared.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    TableComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule
+
+    LibSharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
